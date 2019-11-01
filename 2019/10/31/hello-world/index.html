@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="zh-CN">
 
 
 <head>
@@ -108,7 +108,7 @@
     
     <li>
         <a id="toggleSearch" class="waves-effect waves-light">
-            <i id="searchIcon" class="mdi-action-search" title="Search"></i>
+            <i id="searchIcon" class="mdi-action-search" title="搜索"></i>
         </a>
     </li>
 
@@ -189,7 +189,7 @@
         
         <li><div class="divider"></div></li>
         <li>
-            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+            <a href="https://shenqinuo.github.io" class="waves-effect waves-light" target="_blank">
                 <i class="fa fa-github-square fa-fw"></i>Fork Me
             </a>
         </li>
@@ -266,7 +266,7 @@
     }
 </style>
 
-<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+<a href="https://shenqinuo.github.io" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
    data-tooltip="Fork Me" data-position="left" data-delay="50">
     <svg viewBox="0 0 250 250" aria-hidden="true">
         <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -381,7 +381,7 @@
                 <div class="col s7">
                     
                           <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
+                            <span class="chip bg-color">无标签</span>
                           </div>
                     
                 </div>
@@ -392,29 +392,29 @@
 
             <div class="post-info">
                 <div class="post-date info-break-policy">
-                    <i class="fa fa-calendar-minus-o fa-fw"></i>Publish Date:&nbsp;&nbsp;
+                    <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
                     2019-10-31
                 </div>
 
                 
                     
                     <div class="info-break-policy">
-                        <i class="fa fa-file-word-o fa-fw"></i>Word Count:&nbsp;&nbsp;
+                        <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
                         61
                     </div>
                     
 
                     
                     <div class="info-break-policy">
-                        <i class="fa fa-clock-o fa-fw"></i>Read Times:&nbsp;&nbsp;
-                        1 Min
+                        <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                        1 分
                     </div>
                     
                 
 				
 				
                     <div id="busuanzi_container_page_pv" class="info-break-policy">
-                        <i class="fa fa-eye fa-fw"></i>Read Count:&nbsp;&nbsp;
+                        <i class="fa fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
                         <span id="busuanzi_value_page_pv"></span>
                     </div>
 				
@@ -553,7 +553,7 @@
 
 <div id="article-share">
     
-    <div class="social-share" data-disabled="qzone, qq, weibo, douban"></div>
+    <div class="social-share" data-disabled="qzone" data-wechat-qrcode-helper="<p>微信里点“发现”->“扫一扫”二维码便可查看分享。</p>"></div>
     
 </div>
 
@@ -562,7 +562,7 @@
             <div class="reprint">
                 <p>
                     <span class="reprint-tip">
-                        <i class="fa fa-exclamation-circle"></i>&nbsp;&nbsp;Reprint please specify:
+                        <i class="fa fa-exclamation-circle"></i>&nbsp;&nbsp;转载请注明:
                     </span>
                     <a href="https://shenqinuo.github.io" class="b-link-green">申奇诺的blog</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
@@ -633,7 +633,7 @@ gitment.render('gitment-content');
         
         <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-dot-circle-o"></i>&nbsp;Current
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
             </div>
             <div class="card">
                 <a href="/2019/10/31/hello-world/">
@@ -669,7 +669,7 @@ gitment.render('gitment-content');
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                Current&nbsp;<i class="fa fa-dot-circle-o"></i>
+                本篇&nbsp;<i class="fa fa-dot-circle-o"></i>
             </div>
             <div class="card">
                 <a href="/2019/10/31/hello-world/">
@@ -734,9 +734,9 @@ gitment.render('gitment-content');
 
         var url = document.location.href;
         newdiv.innerHTML += '<br />'
-            + 'From: 申奇诺的blog<br />'
-            + 'Author: shenqinuo<br />'
-            + 'Link: <a href="' + url + '">' + url + '</a><br />'
+            + '来源: 申奇诺的blog<br />'
+            + '作者: shenqinuo<br />'
+            + '链接: <a href="' + url + '">' + url + '</a><br />'
             + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
 
         selection.selectAllChildren(newdiv);
@@ -747,7 +747,7 @@ gitment.render('gitment-content');
     </div>
     <div class="col l3 hide-on-med-and-down">
         <div class="toc-widget">
-            <div class="toc-title"><i class="fa fa-list-alt"></i>&nbsp;&nbsp;TOC</div>
+            <div class="toc-title"><i class="fa fa-list-alt"></i>&nbsp;&nbsp;目录</div>
             <div id="toc-content"></div>
         </div>
     </div>
@@ -854,8 +854,8 @@ gitment.render('gitment-content');
 <div id="searchModal" class="modal">
     <div class="modal-content">
         <div class="search-header">
-            <span class="title"><i class="fa fa-search"></i>&nbsp;&nbsp;Search</span>
-            <input type="search" id="searchInput" name="s" placeholder="Please enter a search keyword"
+            <span class="title"><i class="fa fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
                    class="search-input" autofocus="">
         </div>
         <div id="searchResult"></div>

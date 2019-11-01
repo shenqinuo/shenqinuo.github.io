@@ -361,12 +361,13 @@ header .go-back i {
 .post-cover {
     height: 40vh !important;
 }
-
+/*背景颜色变换*/
+/*
 .bg-cover:after {
     -webkit-animation: rainbow 60s infinite;
     animation: rainbow 60s infinite;
 }
-
+*/
 .bg-cover:before, .bg-cover:after {
     position: absolute;
     z-index: 1;
