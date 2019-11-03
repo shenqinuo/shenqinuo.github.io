@@ -408,14 +408,14 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        149
+                        680
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        1 分
+                        2 分
                     </div>
                     
                 
@@ -455,6 +455,90 @@
 <li><p>输入网页内容进行测试<img src="/medias/blog01/6.png" alt="下滑进行保存提交"></p>
 </li>
 <li><p>打开网页输入域名:https://你的用户名.github.io，网页显示hello github为成功</p>
+</li>
+</ol>
+<h3 id="安装git-for-windows"><a href="#安装git-for-windows" class="headerlink" title="安装git for windows"></a>安装git for windows</h3><ol>
+<li><p>进入<a href="https://gitforwindows" target="_blank" rel="noopener">官网</a>下载安装(安装在D盘)。</p>
+</li>
+<li><p>直接下一步下一步，到这里选择第二个</p>
+<p><img src="/medias/blog01/7.png" alt=""></p>
+</li>
+<li><p>打开cmd，输入git，回车</p>
+</li>
+<li><p>在安装路径下打开git-bash.exe,输入命令：ssh-keygen -t rsa -C “双引号内输入自己的邮箱”，然后三次回车</p>
+</li>
+<li><p>打开github，点开头像，找到setting</p>
+<p><img src="/medias/blog01/8.png" alt=""></p>
+<p><img src="/medias/blog01/9.png" alt="点开newkey，title随便写"></p>
+</li>
+<li><p>key值从C盘&gt;用户&gt;Administrator&gt;.ssh中的文件：id_rsa.pub，用记事本打开，复制内容，粘贴到key中</p>
+</li>
+</ol>
+<h3 id="配置Hexo"><a href="#配置Hexo" class="headerlink" title="配置Hexo"></a>配置Hexo</h3><ol>
+<li><p>进入hexo的文档，<a href="https://hexo.io" target="_blank" rel="noopener">这里</a></p>
+</li>
+<li><p>D盘创建文件夹：blog</p>
+</li>
+<li><p>打开cmd命令，D:切换到D盘，cd到blog，输入命令npm install hexo-cli -g</p>
+<p><img src="/medias/blog01/10.png" alt="如图"></p>
+</li>
+<li><p>继续跟着文档的命令安装</p>
+<p><img src="/medias/blog01/11.png" alt=""></p>
+</li>
+<li><p>输入命令：hexo init （此输入博客的目录 如:shenqinuo）</p>
+</li>
+<li><p>cd:到刚刚创建的目录(如shenqinuo)</p>
+</li>
+<li><p>输入 npm install</p>
+</li>
+<li><p>输入命令hexo s -p 5555</p>
+</li>
+<li><p>浏览器打开输入<a href="https://localhost.5555，出现hexo的原始主题" target="_blank" rel="noopener">https://localhost.5555，出现hexo的原始主题</a></p>
+</li>
+</ol>
+<h3 id="下载安装Sublime"><a href="#下载安装Sublime" class="headerlink" title="下载安装Sublime"></a>下载安装Sublime</h3><ol>
+<li><p>下载官网：<a href="https://www.sublimetext.com" target="_blank" rel="noopener">官网</a></p>
+</li>
+<li><p>找到下载文件夹，打开软件</p>
+</li>
+<li><p>将博客目录直接拖进软件</p>
+<p><img src="/medias/blog01/12.png" alt=""></p>
+</li>
+<li><p>发布的文章在博客目录下source下的_posts中，可更改其中内容</p>
+</li>
+</ol>
+<h3 id="将博客发布到github上"><a href="#将博客发布到github上" class="headerlink" title="将博客发布到github上"></a>将博客发布到github上</h3><ol>
+<li><p>打开配置_config.yml修改url为自己的github网址</p>
+<p><img src="/medias/blog01/13.png" alt=""></p>
+</li>
+<li><p>修改最下方的配置</p>
+<p><img src="/medias/blog01/14.png" alt=""></p>
+</li>
+<li><p>打开cmd命令，进入博客目录下</p>
+</li>
+<li><p>安装插件,输入命令:npm install hexo-deployer-git –save</p>
+</li>
+<li><p>配置github信息：输入命令：git config –global use.email “输入邮箱” 回车</p>
+</li>
+<li><p>输入命令：git config –global use.name “输入gthub的用户名” 回车，出现弹窗输入账号密码</p>
+</li>
+<li><p>输入生成命令hexo g  回车  输入提交命令 hexo d</p>
+</li>
+<li><p>打开浏览器：https://用户名.github.io就能看见博客了</p>
+</li>
+</ol>
+<h3 id="下载主题（以next为例）"><a href="#下载主题（以next为例）" class="headerlink" title="下载主题（以next为例）"></a>下载主题（以next为例）</h3><p><img src="/medias/blog01/15.png" alt=""></p>
+<ol>
+<li><p>点击进入，搜索Next  点击进入主题：<a href="https://github.com/theme-next/hexo-theme-next/blob/master/docs/INSTALLATION.md" target="_blank" rel="noopener">next主题</a></p>
+<p><img src="/medias/blog01/16.png" alt=""></p>
+</li>
+<li><p>找到下载zip格式，解压后复制到博客目录下的themes中</p>
+</li>
+<li><p>打开配置_config.yml修改theme为next</p>
+</li>
+<li><p>打开cmd命令，输入清除命令hexo clean 回车后输入生成命令hexo g  回车  输入提交命令 hexo d</p>
+</li>
+<li><p>打开浏览器：https://用户名.github.io就能看见next主题了</p>
 </li>
 </ol>
 
@@ -662,36 +746,30 @@ gitment.render('gitment-content');
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
-            </div>
+                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2019/11/02/build-a-blog/">
+                <a href="/2019/11/03/hexo-ming-ling-ji-markdown/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="搭建博客教程">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="hexo命令及Markdown">
                         
-                        <span class="card-title">搭建博客教程</span>
+                        <span class="card-title">hexo命令及Markdown</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary">[toc]
-搭建一个属于自己博客首先下载nood.js
-百度进入官网：点击下载文件
-安装软件，直接下一步（最好安装到D盘）
-打开cmd命令,输入node -v 回车显示版本
-
-
-注册githunb
-打开浏览器进入官网github官网
-
-输入</div>
+hexo命令
+hexo n 文章名   新建一个文章
+hexo clean        清除文章
+hexo g                生成文章
+hexo d                提交文章（上传到github）</div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-11-02
-                            </span>
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-11-03
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-user fa-fw"></i>
@@ -700,7 +778,6 @@ gitment.render('gitment-content');
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
@@ -844,7 +921,7 @@ gitment.render('gitment-content');
 
             
                 &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-                <span class="white-color">215</span>
+                <span class="white-color">938</span>
             
 
             

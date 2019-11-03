@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://shenqinuo.github.io/"/>
-  <updated>2019-11-03T04:56:18.355Z</updated>
+  <updated>2019-11-03T12:38:05.411Z</updated>
   <id>https://shenqinuo.github.io/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>hexo命令及Markdown</title>
+    <link href="https://shenqinuo.github.io/2019/11/03/hexo-ming-ling-ji-markdown/"/>
+    <id>https://shenqinuo.github.io/2019/11/03/hexo-ming-ling-ji-markdown/</id>
+    <published>2019-11-03T10:50:10.000Z</published>
+    <updated>2019-11-03T12:38:05.411Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;[toc]&lt;/p&gt;
+&lt;h2 id=&quot;hexo命令&quot;&gt;&lt;a href=&quot;#hexo命令&quot; class=&quot;headerlink&quot; title=&quot;hexo命令&quot;&gt;&lt;/a&gt;hexo命令&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;hexo n 文章名   新建一个文章&lt;/li&gt;
+&lt;li&gt;hexo
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>搭建博客教程</title>
     <link href="https://shenqinuo.github.io/2019/11/02/build-a-blog/"/>
     <id>https://shenqinuo.github.io/2019/11/02/build-a-blog/</id>
     <published>2019-11-02T14:57:12.360Z</published>
-    <updated>2019-11-03T04:56:18.355Z</updated>
+    <updated>2019-11-03T13:17:53.351Z</updated>
     
     <summary type="html">
     
