@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>搭建博客教程</title>
+      <link href="/2019/11/02/build-a-blog/"/>
+      <url>/2019/11/02/build-a-blog/</url>
+      
+        <content type="html"><![CDATA[<p>[toc]</p><h1 id="搭建一个属于自己博客"><a href="#搭建一个属于自己博客" class="headerlink" title="搭建一个属于自己博客"></a>搭建一个属于自己博客</h1><h3 id="首先下载nood-js"><a href="#首先下载nood-js" class="headerlink" title="首先下载nood.js"></a>首先下载nood.js</h3><ol><li>百度进入官网：<a href="https://nodejs.org" target="_blank" rel="noopener">点击</a>下载文件</li><li>安装软件，直接下一步（最好安装到D盘）</li><li>打开cmd命令,输入node -v 回车显示版本</li><li><img src="/medias/blog01/node.png" alt="如图"></li></ol><h3 id="注册githunb"><a href="#注册githunb" class="headerlink" title="注册githunb"></a>注册githunb</h3><ol><li><p>打开浏览器进入官网<a href="https://github.com" target="_blank" rel="noopener">github官网</a></p></li><li><p>输入注册名（英文）邮箱及密码</p><p><img src="/medias/blog01/regist.png" alt=""></p></li></ol>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>你好 世界</title>
       <link href="/2019/10/31/hello-world/"/>
       <url>/2019/10/31/hello-world/</url>
