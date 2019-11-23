@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>MySQL部分命令</title>
+      <link href="/2019/11/23/mysql-bu-fen-ming-ling/"/>
+      <url>/2019/11/23/mysql-bu-fen-ming-ling/</url>
+      
+        <content type="html"><![CDATA[<h3 id="什么是SQL注入"><a href="#什么是SQL注入" class="headerlink" title="什么是SQL注入"></a>什么是SQL注入</h3><p>SQL注入的核心思想：<br>黑客在正常的需要调用数据库数据的URL后面构造一段数据库查询代码，然后根据返回的结果，从而获得想要的某些数据。<br>SQL注入漏洞（SQL injection）是Web层面最高危的漏洞之一，层连续三年在OWASP年度十大漏洞中排名第一。</p><h3 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h3><p>SQL结构化查询语言，绝大多数关系型数据库（MySQL、Access、Oracle等）都采用SQL进行查询、管理及常用操作。<br>MySQL是被广泛使用的一种开源数据库，官方网站<a href="www.mysql.com">点击</a></p><h3 id="AppServ"><a href="#AppServ" class="headerlink" title="AppServ"></a>AppServ</h3><p>通过APPServ，可以在Windows系统中快速搭建出一个Apache+PHP+MySQL的集成Web环境。<br>APPServ是开源软件，<a href="http://www.appservnetwork.com" target="_blank" rel="noopener">官网</a></p><h3 id="进入MySQL命令行"><a href="#进入MySQL命令行" class="headerlink" title="进入MySQL命令行"></a>进入MySQL命令行</h3><p>select version();查询MySQL的版本<br>select user();查询当前用户<br>show databases; 查询当前数据库<br>use test; 打开数据库<br>select database();查看当前test数据库（前提是use test）<br>show tables;显示数据库中的表</p><p><img src="/medias/blog02/1.png" alt=""></p><p>创建表<br>create table hack(<br>    id int,<br>    username varchar(20),<br>    password varchar(30)<br>);<br>向表中添加记录<br>insert into hack values(1,”admin”,”123”);</p><p><img src="/medias/blog02/2.png" alt=""></p><p>查询表中所有：select * from hack;<br>条件查询：select * from hack where id = 1;<br>通过exixts()函数判断hack表是否存：select * from news where id = 1 and exists(select * from hack)<br>通过exixts()函数判断hack表是否存username 字段:select * from news where id = 1 and exists(select username from hack)<br>按照hack表中的升序排序：select * from hack order by id;（id为数字1,2,3等，可判断表中有几个字段）</p><p>union select 联合查询（所有查询中的列书必须相同）<br>select * from news union select * from hack;查询报错（news中有两个字段（id,titell），hack中有三个字段(id,username ,password)）<br>select * from news union select username,password from hack;查询正常<br>select * from news union select 1,2 from hack;（可用数字代替，或者不够时用数字去凑）<br>#,– 表示单行注释（–后面必须有空格）<br>/<em>……..</em>/多行注释</p><p><img src="/medias/blog02/3.png" alt=""></p><p><img src="/medias/blog02/4.png" alt=""></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>hexo命令及Markdown</title>
       <link href="/2019/11/03/hexo-ming-ling-ji-markdown/"/>
       <url>/2019/11/03/hexo-ming-ling-ji-markdown/</url>

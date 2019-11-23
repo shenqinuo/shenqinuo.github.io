@@ -4,18 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="搭建博客教程, 申奇诺的blog">
-    <meta name="description" content="[toc]
-搭建一个属于自己博客首先下载nood.js
-百度进入官网：点击下载文件
-安装软件，直接下一步（最好安装到D盘）
-打开cmd命令,输入node -v 回车显示版本
-
-
-注册githunb
-打开浏览器进入官网github官网
-
-输入">
+    <meta name="keywords" content="MySQL部分命令, 申奇诺的blog">
+    <meta name="description" content="什么是SQL注入SQL注入的核心思想：黑客在正常的需要调用数据库数据的URL后面构造一段数据库查询代码，然后根据返回的结果，从而获得想要的某些数据。SQL注入漏洞（SQL injection）是Web层面最高危的漏洞之一，层连续三年在OWA">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -23,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>搭建博客教程 | 申奇诺的blog</title>
+    <title>MySQL部分命令 | 申奇诺的blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -292,13 +282,13 @@
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        搭建博客教程
+                        MySQL部分命令
                     </div>
                 </div>
             </div>
@@ -401,21 +391,21 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2019-11-02
+                    2019-11-23
                 </div>
 
                 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        680
+                        483
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        2 分
+                        1 分
                     </div>
                     
                 
@@ -431,116 +421,17 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>[toc]</p>
-<h1 id="搭建一个属于自己博客"><a href="#搭建一个属于自己博客" class="headerlink" title="搭建一个属于自己博客"></a>搭建一个属于自己博客</h1><h3 id="首先下载nood-js"><a href="#首先下载nood-js" class="headerlink" title="首先下载nood.js"></a>首先下载nood.js</h3><ol>
-<li>百度进入官网：<a href="https://nodejs.org" target="_blank" rel="noopener">点击</a>下载文件</li>
-<li>安装软件，直接下一步（最好安装到D盘）</li>
-<li>打开cmd命令,输入node -v 回车显示版本</li>
-<li><img src="/medias/blog01/node.png" alt="如图"></li>
-</ol>
-<h3 id="注册githunb"><a href="#注册githunb" class="headerlink" title="注册githunb"></a>注册githunb</h3><ol>
-<li><p>打开浏览器进入官网<a href="https://github.com" target="_blank" rel="noopener">github官网</a></p>
-</li>
-<li><p>输入注册名（英文）邮箱及密码</p>
-<p><img src="/medias/blog01/regist.png" alt=""></p>
-</li>
-<li><p>然后会收到一个邮件，点开邮件中的链接</p>
-</li>
-<li><p>进入这个页面<img src="/medias/blog01/3.png" alt="点击Start a project"></p>
-</li>
-<li><p>新建项目<img src="/medias/blog01/4.png" alt="名称为：用户名.github.io"></p>
-</li>
-<li><p><img src="/medias/blog01/5.png" alt="新建项目"></p>
-</li>
-<li><p>输入网页内容进行测试<img src="/medias/blog01/6.png" alt="下滑进行保存提交"></p>
-</li>
-<li><p>打开网页输入域名:https://你的用户名.github.io，网页显示hello github为成功</p>
-</li>
-</ol>
-<h3 id="安装git-for-windows"><a href="#安装git-for-windows" class="headerlink" title="安装git for windows"></a>安装git for windows</h3><ol>
-<li><p>进入<a href="https://gitforwindows" target="_blank" rel="noopener">官网</a>下载安装(安装在D盘)。</p>
-</li>
-<li><p>直接下一步下一步，到这里选择第二个</p>
-<p><img src="/medias/blog01/7.png" alt=""></p>
-</li>
-<li><p>打开cmd，输入git，回车</p>
-</li>
-<li><p>在安装路径下打开git-bash.exe,输入命令：ssh-keygen -t rsa -C “双引号内输入自己的邮箱”，然后三次回车</p>
-</li>
-<li><p>打开github，点开头像，找到setting</p>
-<p><img src="/medias/blog01/8.png" alt=""></p>
-<p><img src="/medias/blog01/9.png" alt="点开newkey，title随便写"></p>
-</li>
-<li><p>key值从C盘&gt;用户&gt;Administrator&gt;.ssh中的文件：id_rsa.pub，用记事本打开，复制内容，粘贴到key中</p>
-</li>
-</ol>
-<h3 id="配置Hexo"><a href="#配置Hexo" class="headerlink" title="配置Hexo"></a>配置Hexo</h3><ol>
-<li><p>进入hexo的文档，<a href="https://hexo.io" target="_blank" rel="noopener">这里</a></p>
-</li>
-<li><p>D盘创建文件夹：blog</p>
-</li>
-<li><p>打开cmd命令，D:切换到D盘，cd到blog，输入命令npm install hexo-cli -g</p>
-<p><img src="/medias/blog01/10.png" alt="如图"></p>
-</li>
-<li><p>继续跟着文档的命令安装</p>
-<p><img src="/medias/blog01/11.png" alt=""></p>
-</li>
-<li><p>输入命令：hexo init （此输入博客的目录 如:shenqinuo）</p>
-</li>
-<li><p>cd:到刚刚创建的目录(如shenqinuo)</p>
-</li>
-<li><p>输入 npm install</p>
-</li>
-<li><p>输入命令hexo s -p 5555</p>
-</li>
-<li><p>浏览器打开输入<a href="https://localhost:5555，出现hexo的原始主题" target="_blank" rel="noopener">https://localhost:5555，出现hexo的原始主题</a></p>
-</li>
-</ol>
-<h3 id="下载安装Sublime"><a href="#下载安装Sublime" class="headerlink" title="下载安装Sublime"></a>下载安装Sublime</h3><ol>
-<li><p>下载官网：<a href="https://www.sublimetext.com" target="_blank" rel="noopener">官网</a></p>
-</li>
-<li><p>找到下载文件夹，打开软件</p>
-</li>
-<li><p>将博客目录直接拖进软件</p>
-<p><img src="/medias/blog01/12.png" alt=""></p>
-</li>
-<li><p>发布的文章在博客目录下source下的_posts中，可更改其中内容</p>
-</li>
-</ol>
-<h3 id="将博客发布到github上"><a href="#将博客发布到github上" class="headerlink" title="将博客发布到github上"></a>将博客发布到github上</h3><ol>
-<li><p>打开配置_config.yml修改url为自己的github网址</p>
-<p><img src="/medias/blog01/13.png" alt=""></p>
-</li>
-<li><p>修改最下方的配置</p>
-<p><img src="/medias/blog01/14.png" alt=""></p>
-</li>
-<li><p>打开cmd命令，进入博客目录下</p>
-</li>
-<li><p>安装插件,输入命令:npm install hexo-deployer-git - -save</p>
-</li>
-<li><p>配置github信息：输入命令：git config - -global user.email “输入邮箱” 回车</p>
-</li>
-<li><p>输入命令：git config - -global user.name “输入gthub的用户名” 回车，出现弹窗输入账号密码</p>
-</li>
-<li><p>输入生成命令hexo g  回车  输入提交命令 hexo d</p>
-</li>
-<li><p>打开浏览器：https://用户名.github.io就能看见博客了</p>
-</li>
-</ol>
-<h3 id="下载主题（以next为例）"><a href="#下载主题（以next为例）" class="headerlink" title="下载主题（以next为例）"></a>下载主题（以next为例）</h3><p><img src="/medias/blog01/15.png" alt=""></p>
-<ol>
-<li><p>点击进入，搜索Next  点击进入主题：<a href="https://github.com/theme-next/hexo-theme-next/blob/master/docs/INSTALLATION.md" target="_blank" rel="noopener">next主题</a></p>
-<p><img src="/medias/blog01/16.png" alt=""></p>
-</li>
-<li><p>找到下载zip格式，解压后复制到博客目录下的themes中</p>
-</li>
-<li><p>打开配置_config.yml修改theme为next</p>
-</li>
-<li><p>打开cmd命令，输入清除命令hexo clean 回车后输入生成命令hexo g  回车  输入提交命令 hexo d</p>
-</li>
-<li><p>打开浏览器：https://用户名.github.io就能看见next主题了</p>
-</li>
-</ol>
+                <h3 id="什么是SQL注入"><a href="#什么是SQL注入" class="headerlink" title="什么是SQL注入"></a>什么是SQL注入</h3><p>SQL注入的核心思想：<br>黑客在正常的需要调用数据库数据的URL后面构造一段数据库查询代码，然后根据返回的结果，从而获得想要的某些数据。<br>SQL注入漏洞（SQL injection）是Web层面最高危的漏洞之一，层连续三年在OWASP年度十大漏洞中排名第一。</p>
+<h3 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h3><p>SQL结构化查询语言，绝大多数关系型数据库（MySQL、Access、Oracle等）都采用SQL进行查询、管理及常用操作。<br>MySQL是被广泛使用的一种开源数据库，官方网站<a href="www.mysql.com">点击</a></p>
+<h3 id="AppServ"><a href="#AppServ" class="headerlink" title="AppServ"></a>AppServ</h3><p>通过APPServ，可以在Windows系统中快速搭建出一个Apache+PHP+MySQL的集成Web环境。<br>APPServ是开源软件，<a href="http://www.appservnetwork.com" target="_blank" rel="noopener">官网</a></p>
+<h3 id="进入MySQL命令行"><a href="#进入MySQL命令行" class="headerlink" title="进入MySQL命令行"></a>进入MySQL命令行</h3><p>select version();查询MySQL的版本<br>select user();查询当前用户<br>show databases; 查询当前数据库<br>use test; 打开数据库<br>select database();查看当前test数据库（前提是use test）<br>show tables;显示数据库中的表</p>
+<p><img src="/medias/blog02/1.png" alt=""></p>
+<p>创建表<br>create table hack(<br>    id int,<br>    username varchar(20),<br>    password varchar(30)<br>);<br>向表中添加记录<br>insert into hack values(1,”admin”,”123”);</p>
+<p><img src="/medias/blog02/2.png" alt=""></p>
+<p>查询表中所有：select * from hack;<br>条件查询：select * from hack where id = 1;<br>通过exixts()函数判断hack表是否存：select * from news where id = 1 and exists(select * from hack)<br>通过exixts()函数判断hack表是否存username 字段:select * from news where id = 1 and exists(select username from hack)<br>按照hack表中的升序排序：select * from hack order by id;（id为数字1,2,3等，可判断表中有几个字段）</p>
+<p>union select 联合查询（所有查询中的列书必须相同）<br>select * from news union select * from hack;查询报错（news中有两个字段（id,titell），hack中有三个字段(id,username ,password)）<br>select * from news union select username,password from hack;查询正常<br>select * from news union select 1,2 from hack;（可用数字代替，或者不够时用数字去凑）<br>#,– 表示单行注释（–后面必须有空格）<br>/<em>……..</em>/多行注释</p>
+<p><img src="/medias/blog02/3.png" alt=""></p>
+<p><img src="/medias/blog02/4.png" alt=""></p>
 
             </div>
             <hr/>
@@ -681,7 +572,7 @@
                     </span>
                     <a href="https://shenqinuo.github.io" class="b-link-green">申奇诺的blog</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2019/11/02/build-a-blog/" class="b-link-green">搭建博客教程</a>
+                    <a href="/2019/11/23/mysql-bu-fen-ming-ling/" class="b-link-green">MySQL部分命令</a>
                 </p>
             </div>
         </div>
@@ -703,7 +594,7 @@
         repo: '',
         owner: '',
         admin: null,
-        id: '2019-11-02T22-57-12',
+        id: '2019-11-23T11-27-59',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -722,7 +613,7 @@
 <script src="/libs/gitment/gitment.js"></script>
 <script>
 var gitment = new Gitment({
-    id: 'Sat Nov 02 2019 22:57:12 GMT+0800',
+    id: 'Sat Nov 23 2019 11:27:59 GMT+0800',
     owner: '',
     repo: '',
     oauth: {
@@ -746,9 +637,44 @@ gitment.render('gitment-content');
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2019/11/23/mysql-bu-fen-ming-ling/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="MySQL部分命令">
+                        
+                        <span class="card-title">MySQL部分命令</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary">什么是SQL注入SQL注入的核心思想：黑客在正常的需要调用数据库数据的URL后面构造一段数据库查询代码，然后根据返回的结果，从而获得想要的某些数据。SQL注入漏洞（SQL injection）是Web层面最高危的漏洞之一，层连续三年在OWA</div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-11-23
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-user fa-fw"></i>
+                            shenqinuo
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2019/11/03/hexo-ming-ling-ji-markdown/">
                     <div class="card-image">
@@ -767,44 +693,8 @@ hexo clean        清除文章
 hexo g                生成文章
 hexo d                提交文章（上传到github）</div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-11-03
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-user fa-fw"></i>
-                            shenqinuo
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2019/10/31/hello-world/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="你好 世界">
-                        
-                        <span class="card-title">你好 世界</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary">[toc]
-这是我的第一篇文章，初次来到Github,请多多关照。
-进入主题搭建一个属于自己的博客简书请看：https://www.jianshu.com/p/bad24beeb51e
-搭建博客视频教学友情链接：https://b23.tv</div>
-                    <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-10-31
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-11-03
                             </span>
                         <span class="publish-author">
                             
