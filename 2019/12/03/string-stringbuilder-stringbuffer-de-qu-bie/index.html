@@ -401,7 +401,7 @@ String StringBuilder StringBuffer.关于String 需要注意两点：
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        817
+                        818
                     </div>
                     
 
@@ -445,13 +445,16 @@ String StringBuilder StringBuffer.关于String 需要注意两点：
 <p>底层是这样的：</p>
 <p><img src="/medias/blog05/3.jpg" alt=""></p>
 <p>Str刚开始指向常量池中的“you”，拼接字符串“win”的时候又开辟了两块块内存空间一块保存“win”,一块保存拼接以后生成的字符串“ you win”并且str指向拼接以后的字符串，在这个过程中一共占用了三块内存空间，所以效率是非常低下的。</p>
+<hr>
 <p>StringBuilder 和 StringBuffer都继承于：AbstractStringBuilder<br>他们的底层使用的是没有用final修饰的字符数组：char[]</p>
+<hr>
 <p>abstract class AbstractStringBuilder implements Appendable, CharSequence {<br>/<em>*<br>\</em> The value is used for character storage.<br>*/</p>
-<h4 id="char-value"><a href="#char-value" class="headerlink" title="char[] value;"></a>char[] value;</h4><p>所以在做字符串拼接的时候就在原来的内存上进行拼接，不会浪费内存空间。</p>
+<p>char[] value;</p>
+<p>所以在做字符串拼接的时候就在原来的内存上进行拼接，不会浪费内存空间。</p>
 <p>StringBuilder和StringBuffer的区别是</p>
 <p>StringBuilder是线程不安全的，它的执行效率比StriingBuffer要高</p>
 <p>StringBuffer是线程安全的，它的执行效率比StringBuilder要低</p>
-<h4 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h4><h5 id="1-String字符串是不可变的。"><a href="#1-String字符串是不可变的。" class="headerlink" title="1.String字符串是不可变的。"></a>1.String字符串是不可变的。</h5><h5 id="2-在修改字符串操作比较多的时候用StringBuilder或StringBuffer"><a href="#2-在修改字符串操作比较多的时候用StringBuilder或StringBuffer" class="headerlink" title="2.在修改字符串操作比较多的时候用StringBuilder或StringBuffer."></a>2.在修改字符串操作比较多的时候用StringBuilder或StringBuffer.</h5><h5 id="在要求线程安全的情况下用StringBuffer"><a href="#在要求线程安全的情况下用StringBuffer" class="headerlink" title="在要求线程安全的情况下用StringBuffer"></a>在要求线程安全的情况下用StringBuffer</h5><h5 id="在不要求线程安全的情况下用StringBuilder"><a href="#在不要求线程安全的情况下用StringBuilder" class="headerlink" title="在不要求线程安全的情况下用StringBuilder"></a>在不要求线程安全的情况下用StringBuilder</h5><p>文章来自<a href="https://www.zhihu.com/answer/902621271" target="_blank" rel="noopener">https://www.zhihu.com/answer/902621271</a></p>
+<h4 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h4><h5 id="1-String字符串是不可变的。"><a href="#1-String字符串是不可变的。" class="headerlink" title="1.String字符串是不可变的。"></a>1.String字符串是不可变的。</h5><h5 id="2-在修改字符串操作比较多的时候用StringBuilder或StringBuffer"><a href="#2-在修改字符串操作比较多的时候用StringBuilder或StringBuffer" class="headerlink" title="2.在修改字符串操作比较多的时候用StringBuilder或StringBuffer."></a>2.在修改字符串操作比较多的时候用StringBuilder或StringBuffer.</h5><h5 id="在要求线程安全的情况下用StringBuffer"><a href="#在要求线程安全的情况下用StringBuffer" class="headerlink" title="在要求线程安全的情况下用StringBuffer"></a>在要求线程安全的情况下用StringBuffer</h5><h5 id="在不要求线程安全的情况下用StringBuilder"><a href="#在不要求线程安全的情况下用StringBuilder" class="headerlink" title="在不要求线程安全的情况下用StringBuilder"></a>在不要求线程安全的情况下用StringBuilder</h5><p>文章转自：<a href="https://www.zhihu.com/answer/902621271" target="_blank" rel="noopener">https://www.zhihu.com/answer/902621271</a></p>
 
             </div>
             <hr/>
