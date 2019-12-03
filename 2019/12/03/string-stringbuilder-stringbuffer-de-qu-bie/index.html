@@ -426,12 +426,12 @@ String StringBuilder StringBuffer.关于String 需要注意两点：
             <div id="articleContent">
                 <p>在JAVA中字符串的表示有三种方式  </p>
 <h4 id="String-StringBuilder-StringBuffer"><a href="#String-StringBuilder-StringBuffer" class="headerlink" title="String StringBuilder StringBuffer."></a>String StringBuilder StringBuffer.</h4><p>关于String 需要注意两点：</p>
-<h4 id="1-String是不可变的字符串，它的底层是一个用final修饰的字符数组"><a href="#1-String是不可变的字符串，它的底层是一个用final修饰的字符数组" class="headerlink" title="1.String是不可变的字符串，它的底层是一个用final修饰的字符数组"></a>1.String是不可变的字符串，它的底层是一个用final修饰的字符数组</h4><p><img src="/medias/blog05/1.pjeg" alt=""></p>
+<h4 id="1-String是不可变的字符串，它的底层是一个用final修饰的字符数组"><a href="#1-String是不可变的字符串，它的底层是一个用final修饰的字符数组" class="headerlink" title="1.String是不可变的字符串，它的底层是一个用final修饰的字符数组"></a>1.String是不可变的字符串，它的底层是一个用final修饰的字符数组</h4><p><img src="/medias/blog05/1.png" alt=""></p>
 <h4 id="2-String-对象赋值之后就会在字符串常量池中缓存，"><a href="#2-String-对象赋值之后就会在字符串常量池中缓存，" class="headerlink" title="2.String 对象赋值之后就会在字符串常量池中缓存，"></a>2.String 对象赋值之后就会在字符串常量池中缓存，</h4><p>如果下次创建会判定常量池是否已经有缓存对象，如果有的话直接返回该引用给创建者。</p>
 <p>####　什么是字符串常量池？</p>
 <p>Java中的字符串常量池（String Pool）是Java堆内存中的一片内存空间。</p>
 <p>我们知道String是java中比较特殊的类，我们可以使用new运算符创建String对象，也可以用双引号（”“）创建字串对象，看下图：</p>
-<p><img src="/medias/blog05/%EF%BC%92.pjeg" alt=""></p>
+<p><img src="/medias/blog05/%EF%BC%92.png" alt=""></p>
 <p>String s1 = “Cat”当我们用这种方式创建字符串对象的时候，首先会去字符串常量池中查找看有没有“Cat”字符串，如果有则返回它的地址给s1,如果没有则在常量池中创建“Cat”字符串，并将地址返回给s1.</p>
 <p>String s3 = new String(“Cat”)当我们用这种方式创建字符串对象的时候，首先会去字符串常量池中查找看有没有“Cat”字符串,如果没有则在常量池中创建“Cat”字符串，然后在堆内存中创建“Cat”字符串，并将堆内存中的地址返回给s3.</p>
 <p>所以结果 s1 == s2 为true s1==s3为false,s1和s2都指向了常量池中的“Cat”而s3指向了堆内存中的“Cat”</p>
@@ -443,7 +443,7 @@ String StringBuilder StringBuffer.关于String 需要注意两点：
 <p>String str = “you”;</p>
 <p>Str = str+”win”;</p>
 <p>底层是这样的：</p>
-<p><img src="/medias/blog05/3.jpg" alt=""></p>
+<p><img src="/medias/blog05/3.png" alt=""></p>
 <p>Str刚开始指向常量池中的“you”，拼接字符串“win”的时候又开辟了两块块内存空间一块保存“win”,一块保存拼接以后生成的字符串“ you win”并且str指向拼接以后的字符串，在这个过程中一共占用了三块内存空间，所以效率是非常低下的。</p>
 <hr>
 <p>StringBuilder 和 StringBuffer都继承于：AbstractStringBuilder<br>他们的底层使用的是没有用final修饰的字符数组：char[]</p>
