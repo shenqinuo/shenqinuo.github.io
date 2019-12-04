@@ -431,7 +431,7 @@ String StringBuilder StringBuffer.关于String 需要注意两点：
 <p>####　什么是字符串常量池？</p>
 <p>Java中的字符串常量池（String Pool）是Java堆内存中的一片内存空间。</p>
 <p>我们知道String是java中比较特殊的类，我们可以使用new运算符创建String对象，也可以用双引号（”“）创建字串对象，看下图：</p>
-<p><img src="/medias/blog05/%EF%BC%92.png" alt=""></p>
+<p><img src="/medias/blog05/2.jepg" alt=""></p>
 <p>String s1 = “Cat”当我们用这种方式创建字符串对象的时候，首先会去字符串常量池中查找看有没有“Cat”字符串，如果有则返回它的地址给s1,如果没有则在常量池中创建“Cat”字符串，并将地址返回给s1.</p>
 <p>String s3 = new String(“Cat”)当我们用这种方式创建字符串对象的时候，首先会去字符串常量池中查找看有没有“Cat”字符串,如果没有则在常量池中创建“Cat”字符串，然后在堆内存中创建“Cat”字符串，并将堆内存中的地址返回给s3.</p>
 <p>所以结果 s1 == s2 为true s1==s3为false,s1和s2都指向了常量池中的“Cat”而s3指向了堆内存中的“Cat”</p>
